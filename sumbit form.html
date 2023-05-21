@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>study of biology</title> 
+        <script src="cupic.js"></script>  
+    </head>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'poppins',sans-serif;
+            box-sizing: border-box;
+        }
+        .hero{
+            width:100%;
+            height: 100vh;
+            background-image:url(abstract-3101131_1280.jpg);
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        form{
+            width: 90%;
+            max-width: 600px;
+
+        }
+        .k{
+            margin-bottom: 30px;
+            position: relative;
+
+        }
+        input,textarea{
+            width: 100%;
+            padding: 10px;
+            outline: 0;
+            border: 1px solid #fff;
+            background-color: transparent;
+            font-size: 15px;
+        }
+        label{
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 10px;
+            color: #fff;
+            cursor: text;
+            transition: 0.2s;
+        }
+        button{
+            padding: 10px 0;
+            color: #fff;
+            outline: none;
+            background: transparent;
+            border: 1px solid #fff;
+            width: 100%;
+            cursor: pointer;
+        }
+        input:focus~label,
+        input:valid~label,
+        textarea:focus~label,
+        textarea:valid~label{
+            top: -35px;
+            font-size: 14px;
+
+        }
+        .row{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .row.k{
+            flex-basis: 48%;
+        }
+        #q1{
+            font-size: x-large;
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            background-image:url(abstract-3101131_1280.jpg);
+            background-position: center;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          color: #fff;
+
+        }
+        #kpo{
+            padding-top:200px;
+            margin-bottom:  0;
+            text-align: center;
+            font-size: x-large;
+            color: #fff;
+            transition: 1s;
+        }
+        #g1{
+            color: #fff;
+        }
+        #kpo:hover{
+            transform: scale(1.1);
+          z-index: 2;
+
+        }
+
+
+
+
+    </style>
+<body id="hero">
+    <div id="q1">
+        Get In Touch With Us
+</div>
+    
+
+        <div class="hero">
+
+        
+
+            <form onsubmit="sendEmail();reset(); return false;">
+                <div class="row">
+                    <div class="k">
+                    
+                        <input type="text" id="name" required>
+                        <label for="name">Your name</label>
+    
+                    </div>
+    
+                    <div class="k">
+                        <input type="text" id="number" required>
+                        <label for="number">Phone No,</label>
+    
+                    </div>
+
+
+                </div>
+
+              
+
+                <div class="k">
+                    <input type="email" id="email" required>
+                    <label for="email">Email Id</label>
+
+                </div>
+
+                <div class="k">
+                   <textarea id="massage" rows="8" required></textarea>
+                    <label for="massage">Your massage</label>
+
+                </div>
+                <button onclick="alert ('Sumbit Successfully')"reset(); type="submit">SUBMIT</button>
+              
+            
+               <div id="kpo">
+             <a id="g1" href="index.html">HOME</a>
+             </div>
+    
+    </form>
+        </div>
+        
+    
+            
+</body>
+   
+    </html>
